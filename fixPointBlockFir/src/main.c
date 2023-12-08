@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include "../inc/firCoef.h"
 #include "../inc/fixedPointBlockFir.h"
-#include "../inc/firCoef.h"
 
 #define C_NUM_BLOCK_DATA 80
 
