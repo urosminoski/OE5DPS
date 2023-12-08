@@ -1,0 +1,5 @@
+# Ignore directiories
+/.vscode/
+
+# Ignore json files
+*.json
