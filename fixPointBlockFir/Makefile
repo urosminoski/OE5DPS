@@ -1,28 +1,4 @@
-# vpath %.c src
-# vpath %.h inc
-
-# CC = g++
-
-# EXE = src\main.exe
-# SRC = main.c fixedPointBlockFir.c
-# OBJ = main.o fixedPointBlockFir.o 
-# HEADER = fixedPointBlockFir.h firCoef.h tistdtypes.h 
-
-# all: $(EXE)
-
-# $(EXE): $(OBJ)
-# 	$(CC) -o $(EXE) $(OBJ)
-
-# $(OBJ): $(SRC) $(HEADER)
-# 	$(CC) -c $?
-
-# run: $(EXE)
-# 	cd .\src\ && .\$(EXE)
-
-# clean:
-# 	del *.o src\*.exe inc\*.gch
-
-# .PHONY: all run clean
+# Makefile for testing of fixedPointBlockFir.c
 
 vpath %.c src
 vpath %.h inc
@@ -52,5 +28,5 @@ run_py: $(EXE)
 clean:
 	del *.o *.exe inc\*.gch
 
-.PHONY: all run clean
+.PHONY: all run_c run_py clean
 
