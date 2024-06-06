@@ -1,0 +1,96 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Korisnik/Desktop/FAKS/DPS/projekat/vhdl/direct_fir/simulation/modelsim
+Edirect_fir
+Z1 w1717602001
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z7 8C:/Users/Korisnik/Desktop/FAKS/DPS/projekat/vhdl/direct_fir/direct_fir.vhd
+Z8 FC:/Users/Korisnik/Desktop/FAKS/DPS/projekat/vhdl/direct_fir/direct_fir.vhd
+l0
+L6
+V3aaARAMZ;7WdNMQjFkz1f3
+!s100 QF[L8a=gGaEnaC9Eb`zTn3
+Z9 OV;C;10.5b;63
+31
+Z10 !s110 1717602071
+!i10b 1
+Z11 !s108 1717602071.000000
+Z12 !s90 -reportprogress|300|-93|-work|work|C:/Users/Korisnik/Desktop/FAKS/DPS/projekat/vhdl/direct_fir/direct_fir.vhd|
+Z13 !s107 C:/Users/Korisnik/Desktop/FAKS/DPS/projekat/vhdl/direct_fir/direct_fir.vhd|
+!i113 1
+Z14 o-93 -work work
+Z15 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+R4
+R5
+R6
+DEx4 work 10 direct_fir 0 22 3aaARAMZ;7WdNMQjFkz1f3
+l83
+L21
+VcTL_LTo:2MF1i4n9QO^On1
+!s100 T4PoaV0]l`7hW[d^aaAo60
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Edirect_fir_tb
+Z16 w1717602895
+R2
+R5
+R6
+R0
+Z17 8C:/Users/Korisnik/Desktop/FAKS/DPS/projekat/vhdl/direct_fir/direct_fir_tb.vhd
+Z18 FC:/Users/Korisnik/Desktop/FAKS/DPS/projekat/vhdl/direct_fir/direct_fir_tb.vhd
+l0
+L7
+VGXFh^OB^=cl>nhjX[R9nB0
+!s100 A`a0>z`_Z7Vd3D89277j50
+R9
+32
+Z19 !s110 1717603369
+!i10b 1
+Z20 !s108 1717603369.000000
+Z21 !s90 -reportprogress|300|-work|work|C:/Users/Korisnik/Desktop/FAKS/DPS/projekat/vhdl/direct_fir/direct_fir_tb.vhd|
+Z22 !s107 C:/Users/Korisnik/Desktop/FAKS/DPS/projekat/vhdl/direct_fir/direct_fir_tb.vhd|
+!i113 1
+Z23 o-work work
+R15
+Abench
+R2
+R5
+R6
+Z24 DEx4 work 13 direct_fir_tb 0 22 GXFh^OB^=cl>nhjX[R9nB0
+l43
+L10
+Z25 Vn^[ob]]B?PY?08JUfdWhA1
+Z26 !s100 :dYS][]NKDGNnz9Mi60D:2
+R9
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R23
+R15

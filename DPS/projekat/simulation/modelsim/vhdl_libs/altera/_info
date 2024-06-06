@@ -1,0 +1,107 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Korisnik/Desktop/FAKS/DPS/projekat/simulation/modelsim
+Palt_dspbuilder_package
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 w1605156530
+R0
+Z5 8c:/intelfpga_lite/20.1/quartus/eda/sim_lib/alt_dspbuilder_package.vhd
+Z6 Fc:/intelfpga_lite/20.1/quartus/eda/sim_lib/alt_dspbuilder_package.vhd
+l0
+L25
+VIPGc8LUF1gKhCQkln2NLh2
+!s100 nCg0@VTmTP]Zk2zjJHWZ`1
+Z7 OV;C;10.5b;63
+31
+b1
+Z8 !s110 1717601830
+!i10b 1
+Z9 !s108 1717601830.000000
+Z10 !s90 -reportprogress|300|-93|-work|altera|c:/intelfpga_lite/20.1/quartus/eda/sim_lib/alt_dspbuilder_package.vhd|
+Z11 !s107 c:/intelfpga_lite/20.1/quartus/eda/sim_lib/alt_dspbuilder_package.vhd|
+!i113 1
+Z12 o-93 -work altera
+Z13 tExplicit 1 CvgOpt 0
+Bbody
+DPx4 work 22 alt_dspbuilder_package 0 22 IPGc8LUF1gKhCQkln2NLh2
+R1
+R2
+R3
+l0
+L1471
+VY8WoD9e34P]`OQ?Pjij^i0
+!s100 HgJ;==E:Pl?6FWHfPn_Y72
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Paltera_standard_functions
+Z14 w1605156529
+R0
+Z15 8c:/intelfpga_lite/20.1/quartus/eda/sim_lib/altera_standard_functions.vhd
+Z16 Fc:/intelfpga_lite/20.1/quartus/eda/sim_lib/altera_standard_functions.vhd
+l0
+L19
+V?X33=99z2iZh?R[A=[4Ik3
+!s100 =Y?Hhj:^X50RUH=i3@K?;3
+R7
+31
+b1
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|altera|c:/intelfpga_lite/20.1/quartus/eda/sim_lib/altera_standard_functions.vhd|
+Z18 !s107 c:/intelfpga_lite/20.1/quartus/eda/sim_lib/altera_standard_functions.vhd|
+!i113 1
+R12
+R13
+Bbody
+DPx4 work 25 altera_standard_functions 0 22 ?X33=99z2iZh?R[A=[4Ik3
+l0
+L26
+VBDo`JJK;[2ZJQ4?SE]Z6F3
+!s100 ;jPK2YMZzP5D]^o^lVMVk1
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Paltera_syn_attributes
+w1605156528
+R0
+8c:/intelfpga_lite/20.1/quartus/eda/sim_lib/altera_syn_attributes.vhd
+Fc:/intelfpga_lite/20.1/quartus/eda/sim_lib/altera_syn_attributes.vhd
+l0
+L33
+VFbQCGNeiUZm<YNoMejh[K3
+!s100 >=6W>R7:J_3D;LbQ[QhOE0
+R7
+31
+R8
+!i10b 1
+R9
+!s90 -reportprogress|300|-93|-work|altera|c:/intelfpga_lite/20.1/quartus/eda/sim_lib/altera_syn_attributes.vhd|
+!s107 c:/intelfpga_lite/20.1/quartus/eda/sim_lib/altera_syn_attributes.vhd|
+!i113 1
+R12
+R13
