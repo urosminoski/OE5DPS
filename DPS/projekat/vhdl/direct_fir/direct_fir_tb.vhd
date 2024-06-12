@@ -11,10 +11,10 @@ architecture bench of direct_fir_tb is
 
 	component direct_fir 
 		generic(
-			IN_WIDTH 	: integer 	:= 8;
+			IN_WIDTH 	: integer 	:= 16;
 			OUT_WIDTH	: integer	:= 16;
-			COEFF_WIDTH	: integer	:= 8;
-			NUM_TAPS	: integer 	:= 51
+			COEFF_WIDTH	: integer	:= 16;
+			NUM_TAPS	: integer 	:= 27
 		);
 		port(
 			clk 	: in std_logic;
@@ -25,10 +25,10 @@ architecture bench of direct_fir_tb is
 	end component;
 	
 	constant CLK_T			: time 		:= 10 ns;
-	constant IN_WIDTH		: integer 	:= 16;
-	constant OUT_WIDTH		: integer 	:= 16;
-	constant COEFF_WIDTH	: integer 	:= 16;
-	constant NUM_TAPS		: integer 	:= 51;
+	constant IN_WIDTH		: integer 	:= 4;
+	constant OUT_WIDTH		: integer 	:= 4;
+	constant COEFF_WIDTH	: integer 	:= 4;
+	constant NUM_TAPS		: integer 	:= 5;
 
 	signal clk		: std_logic := '0';
 	signal rst		: std_logic := '1';

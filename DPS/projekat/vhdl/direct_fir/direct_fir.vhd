@@ -20,65 +20,22 @@ end entity direct_fir;
 
 architecture behavioral of direct_fir is
 	
-	type coeff_type is array (0 to NUM_TAPS - 1) of std_logic_vector(COEFF_WIDTH - 1 downto 0);
-	type shift_reg_type is array(0 to NUM_TAPS - 1) of std_logic_vector(IN_WIDTH - 1 downto 0);
-	type muls_out_type is array(0 to NUM_TAPS - 1) of std_logic_vector(IN_WIDTH + COEFF_WIDTH - 1 downto 0);
+	type coeff_type 		is array(0 to NUM_TAPS - 1) of std_logic_vector(COEFF_WIDTH - 1 downto 0);
+	type shift_reg_type 	is array(0 to NUM_TAPS - 1) of std_logic_vector(IN_WIDTH - 1 downto 0);
+	type muls_out_type 		is array(0 to NUM_TAPS - 1) of std_logic_vector(IN_WIDTH + COEFF_WIDTH - 1 downto 0);
+	type adders_out_type 	is array(0 to NUM_TAPS - 1) of std_logic_vector(IN_WIDTH + COEFF_WIDTH - 1 downto 0);
 	
-	constant fir_coeff : coeff_type := ( x"0002",
-										 x"0000",
-										 x"FFF8",
-										 x"0000",
-										 x"0016",
-										 x"0000",
-										 x"FFD0",
-										 x"0000",
-										 x"005E",
-										 x"0000",
-										 x"FF57",
-										 x"0000",
-										 x"011C",
-										 x"0000",
-										 x"FE36",
-										 x"0000",
-										 x"02CD",
-										 x"0000",
-										 x"FBA2",
-										 x"0000",
-										 x"070C",
-										 x"0000",
-										 x"F31B",
-										 x"0000",
-										 x"2882",
-										 x"4000",
-										 x"2882",
-										 x"0000",
-										 x"F31B",
-										 x"0000",
-										 x"070C",
-										 x"0000",
-										 x"FBA2",
-										 x"0000",
-										 x"02CD",
-										 x"0000",
-										 x"FE36",
-										 x"0000",
-										 x"011C",
-										 x"0000",
-										 x"FF57",
-										 x"0000",
-										 x"005E",
-										 x"0000",
-										 x"FFD0",
-										 x"0000",
-										 x"0016",
-										 x"0000",
-										 x"FFF8",
-										 x"0000",
-										 x"0002");
+	constant fir_coeff : coeff_type := ( x"0",
+										 x"2",
+										 x"4",
+										 x"2",
+										 x"0");
 	
 	signal shift_reg 	: shift_reg_type;
 	signal muls_out 	: muls_out_type;
-	signal adders_out	: muls_out_type;
+	signal adders_out	: adders_out_type;
+	
+	signal d_out_tmp : std_logic_vector(IN_WIDTH + COEFF_WIDTH - 1 downto 0);
 	
 begin
 	
@@ -105,6 +62,7 @@ begin
 		adders_out(i)	<= adders_out(i-1) + muls_out(i);
 	end generate GEN_FIR;
 	
-	d_out <= adders_out(NUM_TAPS - 1)(adders_out(0)'length - 1 downto adders_out(0)'length - OUT_WIDTH);
+	d_out_tmp <= adders_out(NUM_TAPS - 1);-- + x"00004000";
+	d_out <= d_out_tmp(adders_out(0)'length - 2 downto adders_out(0)'length - OUT_WIDTH - 1);
 
 end behavioral;
